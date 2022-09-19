@@ -1,0 +1,5 @@
+Question 1:
+Creating by socket.socket(socket.AF_INET, socket.SOCK_STREAM), AF_INET indicates the Address Family and SOCK_STREAM indicates this is a TCP socket
+
+Question 2:
+

@@ -3,6 +3,7 @@
 
 import socket
 import time
+from multiprocessing import Process
 
 HOST = ""
 PORT = 8001
@@ -22,12 +23,17 @@ def main():
         while True:
             connection,addr = skt.accept()
             print(addr," connected")
-            
-            data = connection.recv(1024)
 
-            time.sleep(1)
-            connection.sendall(data)
-            connection.close()
+            p = Process(target=echo_handler,args=(connection,addr))
+            p.daemon = True
+            p.start()
+            
+def echo_handler(connection,addr):
+    data = connection.recv(1024)
+
+    time.sleep(1)
+    connection.sendall(data)
+    connection.close()
 
 
 

@@ -5,12 +5,13 @@ Question 2:
 In socket server, it needs to bind address and port to work and will always receive requests. In socket client, it just needs to connect to an address and port, send requests and sending information
 
 Question 3:
+skt.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 Question 4:
-We get Port number, host address, IP
+We get Port number, host address, IPs
 
 Question 5:
-recv() will reiceive message from socket, sometimes it returns the length of the message in bytes.
+recv() will receive message from socket, sometimes it returns the length of the message in bytes.
 
 Question 6:
 https://github.com/KexunNiu/CMPUT404/tree/main/Lab2

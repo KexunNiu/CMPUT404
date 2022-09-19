@@ -13,3 +13,4 @@ Question 5:
 recv() will reiceive message from socket, sometimes it returns the length of the message in bytes.
 
 Question 6:
+https://github.com/KexunNiu/CMPUT404/tree/main/Lab2

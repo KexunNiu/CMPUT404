@@ -2,4 +2,14 @@ Question 1:
 Creating by socket.socket(socket.AF_INET, socket.SOCK_STREAM), AF_INET indicates the Address Family and SOCK_STREAM indicates this is a TCP socket
 
 Question 2:
+In socket server, it needs to bind address and port to work and will always receive requests. In socket client, it just needs to connect to an address and port, send requests and sending information
 
+Question 3:
+
+Question 4:
+We get Port number, host address, IP
+
+Question 5:
+recv() will reiceive message from socket, sometimes it returns the length of the message in bytes.
+
+Question 6:

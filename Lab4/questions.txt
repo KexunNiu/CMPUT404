@@ -1,1 +1,31 @@
-1. 
+1. https://github.com/KexunNiu/CMPUT404/tree/main/Lab4/mysite
+
+2. The browser showed me: The install worked successfully! Congratulations!; 
+In the terminal, it shows me the request headers:  
+"GET / HTTP/1.1" 200 16351
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+
+3. When I navigating to '/', it shows Page not found and returns a Status 404.
+When I navigating to '/polls', it shows the plain text "Hello. You're at the polls index."
+
+4. Migration is when we made changes like add, remove to the models, and apply the changes to the database schema.
+It has version-control system like git, so we need them to manage our databases.
+
+5. I saw a log in page after I log into the Django administration site, I can get the custom models after log into the web.
+And I saw we can Add and Change the model Choices and Questions we created.
+
+6. /polls/38/: "You're looking at question 38."
+   /polls/38/results: "You're looking at the results of question 38."
+   /polls/38/vote: "You're voting on question 38."
+
+   If I put a string instead of a number, it shows the error of Status 404.
+   We can modify "<int:question_id>" to <str:question_id> to allow alphabetic characters.
+
+7. It is not intelligent, and will make the code messy, it will apply the code convention without hardcode.
+
+//Reference:https://stackoverflow.com/questions/6485005/django-use-generic-views-or-not#:~:text=The%20intention%20of%20Generic%20Views,becomes%20not%20to%20your%20like.
+8. We can make it more convinent, we can quickly write common views of data without having to write too much code.
+When we have multiple similar views, we should use generic views to reduce boilerplate code.

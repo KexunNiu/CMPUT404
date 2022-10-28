@@ -1,1 +1,13 @@
-Q1. 
+Q0. https://github.com/KexunNiu/CMPUT404/tree/main/Lab7
+
+Q1. Flask provides support for APIs but django does not, but django offers dynamic HTML pages.
+
+Q2. REST stands for representational state transfer, it means the data in the app should be a standardized representation
+
+Q3. CRUD stands for "Create, read, update and delete": Create: POST; Read:GET; Update: PUT; Delete: DELETE;
+
+Q4. 1xx stands for "Informational Responses"; 2xx stands for "Successful Responses"; 3xx stands for "Redirectional messages"; 4xx stands for "Client errors"; 5xx stands for "Server Error Responses";
+
+Q5. XSS stands for "Cross Site Scripting", it relies on inject script to attack websites. If there are forms for user input, if the form does not have something like CSRF token to encrypt user input, then this website is vulneratble.
+
+Q6. CORS stands for Cross-Origin Resource Sharing. When a cross domain request is needed, then CORS will be needed.
